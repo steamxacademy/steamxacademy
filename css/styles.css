@@ -1,0 +1,19 @@
+/* Custom animations */
+.pulse-slow { 
+    animation: pulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite; 
+}
+
+@keyframes pulse { 
+    0%, 100% { opacity: 1; transform: scale(1); } 
+    50% { opacity: .9; transform: scale(1.02); } 
+}
+
+/* Hide scrollbar for horizontal scrolling store */
+.scrollbar-hide::-webkit-scrollbar { 
+    display: none; 
+}
+
+.scrollbar-hide { 
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
