@@ -240,77 +240,77 @@ window.orderKitOnWhatsApp = function (kitName) {
 
 
 // --- FULLY CUSTOMIZABLE FESTIVAL BANNER MANAGER ---
-// const festivalConfig = {
-//     showBanner: true, // Set to 'false' to instantly hide the banner
+const festivalConfig = {
+    showBanner: true, // Set to 'false' to instantly hide the banner
 
-//     // 1. Text & Content Configuration
-//     text: "",
-//     ctaText: "",
-//     ctaLink: "#booking",
-//     emojiLeft: "",
-//     emojiRight: "",
+    // 1. Text & Content Configuration
+    text: "",
+    ctaText: "Claim your free demo",
+    ctaLink: "#booking",
+    emojiLeft: "",
+    emojiRight: "",
 
-//     // 2. FUTURE COLOR CUSTOMIZATION PANEL (Using any Tailwind Color Classes)
-//     // For a solid background color, just use one class (e.g., "bg-brandBlue-600")
-//     // For beautiful gradients, use "bg-gradient-to-r from-[color] via-[color] to-[color]"
-//     bannerBackground: "bg-brandBlue-600",
-//     bannerBottomBorder: "border-brandYellow-400",
-//     bannerTextColor: "text-white",
-//     ctaButtonBackground: "bg-brandYellow-400",
-//     ctaButtonTextColor: "text-gray-900",
+    // 2. FUTURE COLOR CUSTOMIZATION PANEL (Using any Tailwind Color Classes)
+    // For a solid background color, just use one class (e.g., "bg-brandBlue-600")
+    // For beautiful gradients, use "bg-gradient-to-r from-[color] via-[color] to-[color]"
+    bannerBackground: "bg-brandBlue-600",
+    bannerBottomBorder: "border-brandYellow-400",
+    bannerTextColor: "text-white",
+    ctaButtonBackground: "bg-brandYellow-400",
+    ctaButtonTextColor: "text-gray-900",
 
-//     // 3. CTA Button Customization Panel
-//     ctaButtonBackground: "bg-gray-900", // Makes your button contrast brilliantly 
-//     ctaButtonTextColor: "text-brandYellow-400", // Matches your brand colors perfectly
-//     ctaButtonShadow: "shadow-[0_4px_0_0_#000000]" // The 3D cartoon arcade button drop shadow color
-// };
+    // 3. CTA Button Customization Panel
+    ctaButtonBackground: "bg-gray-900", // Makes your button contrast brilliantly 
+    ctaButtonTextColor: "text-brandYellow-400", // Matches your brand colors perfectly
+    ctaButtonShadow: "shadow-[0_4px_0_0_#000000]" // The 3D cartoon arcade button drop shadow color
+};
 
-// function initFestivalBanner() {
-//     const banner = document.getElementById('festival-banner');
-//     const heroSection = document.querySelector('section'); // References your landing hero section
+function initFestivalBanner() {
+    const banner = document.getElementById('festival-banner');
+    const heroSection = document.querySelector('section'); // References your landing hero section
 
-//     if (!banner || !festivalConfig.showBanner) {
-//         if (banner) banner.classList.add('hidden');
-//         return;
-//     }
+    if (!banner || !festivalConfig.showBanner) {
+        if (banner) banner.classList.add('hidden');
+        return;
+    }
 
-//     // Apply Content Texts
-//     document.getElementById('banner-text').innerHTML = festivalConfig.text;
-//     document.getElementById('banner-emoji-left').innerText = festivalConfig.emojiLeft;
-//     document.getElementById('banner-emoji-right').innerText = festivalConfig.emojiRight;
+    // Apply Content Texts
+    document.getElementById('banner-text').innerHTML = festivalConfig.text;
+    document.getElementById('banner-emoji-left').innerText = festivalConfig.emojiLeft;
+    document.getElementById('banner-emoji-right').innerText = festivalConfig.emojiRight;
 
-//     // Apply Main Banner Text and Background Styles
-//     const bgContainer = document.getElementById('banner-bg');
-//     bgContainer.className = `${festivalConfig.bannerBackground} ${festivalConfig.bannerBottomBorder} shadow-lg py-3.5 px-4 text-center relative flex items-center justify-center min-h-[56px] rounded-b-2xl border-b-4`;
+    // Apply Main Banner Text and Background Styles
+    const bgContainer = document.getElementById('banner-bg');
+    bgContainer.className = `${festivalConfig.bannerBackground} ${festivalConfig.bannerBottomBorder} shadow-lg py-3.5 px-4 text-center relative flex items-center justify-center min-h-[56px] rounded-b-2xl border-b-4`;
 
-//     const bannerTextContainer = document.getElementById('banner-text');
-//     bannerTextContainer.className = `${festivalConfig.bannerTextColor} drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.3)] tracking-wide`;
+    const bannerTextContainer = document.getElementById('banner-text');
+    bannerTextContainer.className = `${festivalConfig.bannerTextColor} drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.3)] tracking-wide`;
 
-//     // Apply Button Color Configs
-//     const ctaButton = document.getElementById('banner-cta');
-//     ctaButton.innerHTML = festivalConfig.ctaText;
-//     ctaButton.className = `${festivalConfig.ctaButtonBackground} ${festivalConfig.ctaButtonTextColor} ${festivalConfig.ctaButtonShadow} inline-block font-black text-xs sm:text-sm px-5 py-2 rounded-full uppercase tracking-wider hover:brightness-110 active:translate-y-[2px] active:shadow-none transform hover:scale-105 transition-all duration-150 whitespace-nowrap ml-2`;
+    // Apply Button Color Configs
+    const ctaButton = document.getElementById('banner-cta');
+    ctaButton.innerHTML = festivalConfig.ctaText;
+    ctaButton.className = `${festivalConfig.ctaButtonBackground} ${festivalConfig.ctaButtonTextColor} ${festivalConfig.ctaButtonShadow} inline-block font-black text-xs sm:text-sm px-5 py-2 rounded-full uppercase tracking-wider hover:brightness-110 active:translate-y-[2px] active:shadow-none transform hover:scale-105 transition-all duration-150 whitespace-nowrap ml-2`;
 
-//     // Handle Redirection Click Flow
-//     ctaButton.onclick = () => {
-//         window.location.href = festivalConfig.ctaLink;
-//     };
+    // Handle Redirection Click Flow
+    ctaButton.onclick = () => {
+        window.location.href = festivalConfig.ctaLink;
+    };
 
-//     // Render Section layout modifications gracefully
-//     banner.classList.remove('hidden');
-//     if (heroSection) {
-//         heroSection.style.paddingTop = "184px"; // Offsets content alignment safely
-//     }
-// }
+    // Render Section layout modifications gracefully
+    banner.classList.remove('hidden');
+    if (heroSection) {
+        heroSection.style.paddingTop = "184px"; // Offsets content alignment safely
+    }
+}
 
-// window.closeFestivalBanner = function () {
-//     const banner = document.getElementById('festival-banner');
-//     const heroSection = document.querySelector('section');
-//     banner.classList.add('hidden');
-//     if (heroSection) {
-//         heroSection.style.paddingTop = ""; // Instantly snaps spacing values back to original
-//     }
-// }
+window.closeFestivalBanner = function () {
+    const banner = document.getElementById('festival-banner');
+    const heroSection = document.querySelector('section');
+    banner.classList.add('hidden');
+    if (heroSection) {
+        heroSection.style.paddingTop = ""; // Instantly snaps spacing values back to original
+    }
+}
 
-// // Fire sequence calculation on launch
-// document.addEventListener('DOMContentLoaded', initFestivalBanner);
+// Fire sequence calculation on launch
+document.addEventListener('DOMContentLoaded', initFestivalBanner);
