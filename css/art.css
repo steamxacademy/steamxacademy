@@ -1,0 +1,42 @@
+/* ==========================================================================
+   STEAMX ACADEMY - CREATIVE ARTS TRACK SPECIFIC STYLES
+   ========================================================================== */
+
+/* --- Custom Theme Accents --- */
+.hero-shape.one {
+    background: #ec4899 !important; /* Brand Pink Override */
+}
+
+/* --- Interactive Action Controls --- */
+.hero-btn {
+    background: #db2777 !important;
+    color: white !important;
+    padding: 16px 34px;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
+    box-shadow: 0 4px 6px -1px rgba(219, 39, 119, 0.1), 0 2px 4px -1px rgba(219, 39, 119, 0.06);
+}
+
+.hero-btn:hover {
+    transform: translateY(-4px);
+    background: #be185d !important;
+    box-shadow: 0 20px 25px -5px rgba(219, 39, 119, 0.25), 0 10px 10px -5px rgba(219, 39, 119, 0.2);
+}
+
+.hero-btn-outline {
+    border: 2px solid #db2777 !important;
+    color: #db2777 !important;
+    padding: 16px 34px;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
+}
+
+.hero-btn-outline:hover {
+    background: #db2777 !important;
+    color: white !important;
+    transform: translateY(-2px);
+}

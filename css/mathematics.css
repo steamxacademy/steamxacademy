@@ -1,0 +1,42 @@
+/* ==========================================================================
+   STEAMX ACADEMY - MATHEMATICS TRACK SPECIFIC STYLES
+   ========================================================================== */
+
+/* --- Custom Theme Accents --- */
+.hero-shape.one {
+    background: #eab308 !important; /* Brand Yellow Override */
+}
+
+/* --- Interactive Action Controls --- */
+.hero-btn {
+    background: #facc15 !important;
+    color: #111827 !important; /* High contrast dark text for yellow background readability */
+    padding: 16px 34px;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
+    box-shadow: 0 4px 6px -1px rgba(250, 204, 21, 0.15), 0 2px 4px -1px rgba(250, 204, 21, 0.1);
+}
+
+.hero-btn:hover {
+    transform: translateY(-4px);
+    background: #eab308 !important;
+    box-shadow: 0 20px 25px -5px rgba(250, 204, 21, 0.3), 0 10px 10px -5px rgba(250, 204, 21, 0.2);
+}
+
+.hero-btn-outline {
+    border: 2px solid #eab308 !important;
+    color: #ca8a04 !important;
+    padding: 16px 34px;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-block;
+}
+
+.hero-btn-outline:hover {
+    background: #eab308 !important;
+    color: #111827 !important;
+    transform: translateY(-2px);
+}

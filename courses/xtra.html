@@ -4,35 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Science Program | STEAMX Academy</title>
-    <meta name="description"
-        content="Hands-on Science learning for kids through exciting experiments, STEM challenges and engineering projects.">
+    <title>Mathematics & Abacus Program | STEAMX Academy</title>
+    <meta name="description" content="Develop high-speed mental processing frameworks and core structural logic through mathematics.">
 
-    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif']
-                    },
+                    fontFamily: { sans: ['Poppins', 'sans-serif'] },
                     colors: {
-                        brandBlue: {
-                            50: '#eff6ff',
-                            100: '#dbeafe',
-                            500: '#3b82f6',
-                            600: '#2563eb',
-                            700: '#1d4ed8'
-                        },
-                        brandGreen: {
-                            400: '#4ade80',
-                            500: '#22c55e',
-                            600: '#16a34a'
-                        }
+                        brandBlue: { 50: '#eff6ff', 100: '#dbeafe', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8' },
+                        brandYellow: { 400: '#facc15', 500: '#eab308', 600: '#ca8a04' }
                     }
                 }
             }
@@ -40,12 +25,11 @@
     </script>
 
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/science.css">
+    <link rel="stylesheet" href="../css/xtra.css">
 </head>
 
 <body class="font-sans bg-white text-gray-800">
 
-    <!-- ===================== NAVBAR ===================== -->
     <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-lg border-b border-gray-100 z-50">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex justify-between items-center h-20">
@@ -53,14 +37,12 @@
                     <img src="../assets/icon.png" class="w-12" alt="logo">
                     <span class="font-extrabold text-2xl">STEAMX Academy</span>
                 </a>
-
                 <div class="hidden lg:flex gap-8 font-medium">
                     <a href="../index.html" class="hover:text-brandBlue-600 transition">Home</a>
                     <a href="../index.html#curriculum" class="hover:text-brandBlue-600 transition">Courses</a>
                     <a href="../index.html#store" class="hover:text-brandBlue-600 transition">Store</a>
                     <a href="../index.html#reviews" class="hover:text-brandBlue-600 transition">Reviews</a>
                 </div>
-
                 <a href="../index.html#booking" class="bg-yellow-400 hover:bg-yellow-500 px-6 py-3 rounded-full font-bold transition">
                     Book Trial
                 </a>
@@ -68,62 +50,58 @@
         </div>
     </nav>
 
-    <!-- ===================== HERO ===================== -->
     <section class="hero">
-        <div class="hero-shape one"></div>
+        <div class="hero-shape one !bg-yellow-500"></div>
         <div class="hero-shape two"></div>
         <div class="hero-shape three"></div>
 
-        <div class="floating atom">⚛</div>
-        <div class="floating dna">🧬</div>
-        <div class="floating flask">🧪</div>
-        <div class="floating rocket">🚀</div>
+        <div class="floating atom">🧮</div>
+        <div class="floating dna">📊</div>
+        <div class="floating flask">📈</div>
+        <div class="floating rocket">➕</div>
 
         <div class="max-w-7xl mx-auto px-6 w-full">
             <div class="grid lg:grid-cols-2 gap-16 items-center min-h-screen pt-20">
-                <!-- LEFT -->
                 <div>
-                    <div class="inline-flex items-center gap-3 bg-blue-100 text-blue-700 px-5 py-2 rounded-full mb-8 text-sm font-semibold">
-                        🔬 Future Scientists Start Here
+                    <div class="inline-flex items-center gap-3 bg-yellow-100 text-yellow-700 px-5 py-2 rounded-full mb-8 text-sm font-semibold">
+                        🧮 High-Speed Calculation Mechanics
                     </div>
                     <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight mb-8 text-gray-900">
-                        Discover the Amazing <span class="text-brandBlue-600">World of Science</span>
+                        Advanced Mental <span class="text-brandBlue-600">Arithmetic</span>
                     </h1>
                     <p class="text-xl text-gray-600 leading-relaxed mb-10">
-                        Through exciting experiments, engineering challenges, and real-world STEM projects, children learn by building, exploring and discovering.
+                        Boost calculation speed and working memory tracking through visual abacus training and pattern analysis blocks.
                     </p>
                     <div class="flex flex-wrap gap-5">
-                        <a href="../index.html#booking" class="hero-btn text-center">
+                        <a href="../index.html#booking" class="hero-btn text-center !bg-yellow-500 !text-gray-900 hover:!bg-yellow-600">
                             Book Free Trial
                         </a>
-                        <a href="#domains" class="hero-btn-outline text-center">
-                            Explore Programs
+                        <a href="#curriculum" class="hero-btn-outline text-center !border-yellow-500 !text-yellow-600 hover:!bg-yellow-500 hover:!text-gray-900">
+                            View Syllabus
                         </a>
                     </div>
 
-                    <!-- Stats -->
                     <div class="grid grid-cols-3 gap-6 mt-16">
                         <div class="stat-card">
-                            <h2>120+</h2>
-                            <p class="text-sm text-gray-500 font-medium">Experiments</p>
+                            <h2 class="!text-yellow-600">10x</h2>
+                            <p class="text-sm text-gray-500 font-medium">Speed Boost</p>
                         </div>
                         <div class="stat-card">
-                            <h2>40+</h2>
-                            <p class="text-sm text-gray-500 font-medium">Projects</p>
+                            <h2 class="!text-yellow-600">100%</h2>
+                            <p class="text-sm text-gray-500 font-medium">Confidence</p>
                         </div>
                         <div class="stat-card">
-                            <h2>100%</h2>
-                            <p class="text-sm text-gray-500 font-medium">Hands-on</p>
+                            <h2 class="!text-yellow-600">Ages 5-16</h2>
+                            <p class="text-sm text-gray-500 font-medium">Target Range</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- RIGHT -->
                 <div class="relative flex justify-center">
-                    <img src="../assets/science_hero.png" class="hero-image" alt="Science Experiments Summary Component">
-                    <div class="glass-card top-card">⚡ Physics</div>
-                    <div class="glass-card bottom-card">🧪 Chemistry</div>
-                    <div class="glass-card right-card">🌱 Biology</div>
+                    <img src="../assets/maths/hero.png" class="hero-image" alt="Maths">
+                    <div class="glass-card top-card">🧮 Abacus</div>
+                    <div class="glass-card bottom-card">📊 Data Analysis</div>
+                    <div class="glass-card right-card">📐 Logic Trees</div>
                 </div>
             </div>
         </div>
